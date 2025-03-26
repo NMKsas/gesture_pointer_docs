@@ -51,8 +51,6 @@ To take gesturing tool in use, you need to define a workplane by selecting four 
 
 This method is used by default. 
 
-<video width="320" height="240" controls>
-    <source src="https://github.com/NMKsas/gesture_pointer_docs/blob/main/demo_videos/defining_plane_rgb-d.mp4" type="video/mp3">
-</video>
+https://github.com/user-attachments/assets/0d0226dd-d660-4b6f-bc83-681b7cc049e6
 
 ## 2. Using ArUco markers 
