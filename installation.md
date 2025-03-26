@@ -2,6 +2,7 @@
 layout: page
 title: Installation
 permalink: /installation/
+nav_order: 1
 ---
 
 # Installation  
@@ -42,6 +43,12 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
     pip install opendr-toolkit-engine
     pip install opendr-toolkit-pose-estimation
     ```
+    
+    In case you get a warning from `profobuf` version requirement (>=3.20), update the package to a newer version using pip, 
+
+    ```basha
+    pip install protobuf==3.20
+    ```
 
 2. Copy the pose estimation node to your workspace 
 
@@ -54,7 +61,7 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
 
 3. Download `opendr_bridge` 
 
-    Pose estimation node has some dependencies on another OpenDR project package, `opendr_bridge`. If you want to avoid installing OpenDR environment as a whole, only download [this particular directory](https://github.com/opendr-eu/opendr/tree/master/projects/opendr_ws/src/opendr_bridge).
+    Pose estimation node has some dependencies on another OpenDR project package, `opendr_bridge`. If you want to avoid installing OpenDR environment as a whole, only download [this particular directory](https://github.com/opendr-eu/opendr/tree/master/projects/opendr_ws/src/opendr_bridge). Place the package to your workspace. 
 
 4. Build the workspace
 
