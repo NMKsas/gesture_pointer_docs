@@ -49,8 +49,31 @@ To take gesturing tool in use, you need to define a workplane by selecting four 
                                                                                     
 ## 1. Using RGB-D stream 
 
-This method is used by default. 
+This method is used by default, and launches if corner file is not provided. Run the gesturing node: 
+
+```bash
+# sourcing the package 
+source devel/setup.bash 
+
+# launching the node 
+rosrun gesture_pointer gesture_pointer
+```
+
+Soon after running the node, a depth-image of the camera stream should appear as a pop-up window. Proceeding to click the corners of the desired workspace in the requested clockwise order, starting from upper left corner. Once you are finished, press `Q` to close the pop-up window. After this, the gesture node is set up and running.
 
 https://github.com/user-attachments/assets/0d0226dd-d660-4b6f-bc83-681b7cc049e6
+
+
+The current implementation is not flexible in terms of changing the corner order. It is possible quite easily by tinkering few constants in the code (instructions and improvements on this part are under development).
+
+**Note**: The plane is defined based on the first three corners. Just as seen in the video, it doesn't matter if the node gets bad, occluded depth readings for the last, fourth corner.
+
+To verify that the node is running and everything works, check the gesturing stream by launching e.g., 
+
+```bash
+rosrun rqt_image_view rqt_image_view
+```
+
+You should be able to see topic `gesture_projection` that streams the tool in action.
 
 ## 2. Using ArUco markers 
