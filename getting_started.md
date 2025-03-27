@@ -61,10 +61,7 @@ rosrun gesture_pointer gesture_pointer
 
 Soon after running the node, a depth-image of the camera stream should appear as a pop-up window. Proceeding to click the corners of the desired workspace in the requested clockwise order, starting from upper left corner. Once you are finished, press `Q` to close the pop-up window. After this, the gesture node is set up and running.
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/NMKsas/gesture_pointer_docs/blob/main/demo_videos/defining_plane_rgb-d.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NUYPBbpYvpg?si=uNaocCbzMTSnjL8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The current implementation is not flexible in terms of changing the corner order. It is possible quite easily by tinkering few constants in the code (instructions and improvements on this part are under development).
 
