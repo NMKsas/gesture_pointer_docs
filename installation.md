@@ -44,7 +44,7 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
     pip install opendr-toolkit-pose-estimation
     ```
     
-    In case you get a warning from `profobuf` version requirement (>=3.20), update the package to a newer version using pip, 
+    In case you get a warning from `protobuf` version requirement (>=3.20), update the package to a newer version using pip, 
 
     ```basha
     pip install protobuf==3.20
