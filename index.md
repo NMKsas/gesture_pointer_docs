@@ -20,7 +20,7 @@ Two ROS nodes need to be launched in prior to the gesturing node itself: a camer
 The inputs and outputs are presented in the below diagram. 
 
 
-![Dataflow diagram](/assets/images/dataflow_diagram.png)
+![Dataflow diagram](assets/images/dataflow_diagram.png)
 
 The camera node has to publish three topics: 
 - RGB stream
