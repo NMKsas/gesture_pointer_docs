@@ -15,9 +15,12 @@ git clone ...
 
 Go to the top directory of your catkin workspace and install the package dependencies,
 ```bash
+# update rosdep database
+rosdep update --include-eol-distros 
+
+# install packages
 rosdep install --from-paths src --ignore-src -r -y
 ```
-
 # Dependencies 
 
 ## Intel RealSense camera and ROS wrapper 
@@ -61,7 +64,7 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
 
 3. Download `opendr_bridge` 
 
-    Pose estimation node has some dependencies on another OpenDR project package, `opendr_bridge`. If you want to avoid installing OpenDR environment as a whole, only download [this particular directory](https://github.com/opendr-eu/opendr/tree/master/projects/opendr_ws/src/opendr_bridge). Place the package to your workspace. 
+    Pose estimation node has some dependencies on another OpenDR project package, `opendr_bridge`. If you want to avoid installing OpenDR environment as a whole, only download [this particular directory](https://github.com/opendr-eu/opendr/tree/master/projects/opendr_ws/src/opendr_bridge). Place the package to your workspace (`<your_workspace>/src/`) alongside `gesture_pointer` and `snap_to_target` folders.  
 
 4. Build the workspace
 
@@ -73,6 +76,9 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
 
     # run just in case some entries are missing
     rosdep install --from-paths src --ignore-src -r -y
+
+    # source ros 
+    source /opt/ros/noetic/setup.bash
 
     # build the workspace
     catkin_make
