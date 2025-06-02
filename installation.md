@@ -49,8 +49,8 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
     
     In case you get a warning from `protobuf` version requirement (>=3.20), update the package to a newer version using pip, 
 
-    ```basha
-    pip install protobuf==3.20
+    ```bash
+    pip install protobuf==3.20.2
     ```
 
 2. Copy the pose estimation node to your workspace 
