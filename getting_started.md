@@ -194,11 +194,11 @@ Sometimes the ArUcos are not detected correctly, due to RGB stream quality. If t
           output="screen" required="false"> 
     </node>
 ```
-Normally `required="true"` will automatically close each of the single marker detection entities, once the data collection node is ran. `required="false"` will leave the marker nodes up even if the collection fails, and it is possible to inspect the debugging stream via `RViz` or `rqt`. Each marker publishes `/results` stream.
+Normally `required="true"` will automatically close each of the single marker detection entities, once the data collection node is ran. `required="false"` will leave the marker nodes up even if the collection fails, and it is possible to inspect the debugging stream via `RViz` or `rqt`. Each marker publishes `/result` stream.
 
 ![Debugging ArUco detection RGB stream](../assets/images/aruco_debug.png)
 
-Observe the detections in `/results` stream and adjust the camera settings if needed, using `rqt` plugin.
+Observe the detections in `/result` stream and adjust the camera settings if needed, using `rqt` plugin.
 
 ```bash
 rosrun rqt_reconfigure rqt_reconfigure
