@@ -7,13 +7,16 @@ nav_order: 1
 
 # Installation  
 
-Start by cloning the repository,
+The tool is developed for [ROS1 Noetic Ninjemys](https://wiki.ros.org/noetic) distribution. Install ROS1 as instructed in the [documentation](https://wiki.ros.org/noetic/Installation). 
+
+Start the use of gesturing tool by cloning the repository,
 
 ```bash
 git clone ...
 ```
 
 Go to the top directory of your catkin workspace and install the package dependencies,
+
 ```bash
 # update rosdep database
 rosdep update --include-eol-distros 
@@ -47,11 +50,11 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
     pip install opendr-toolkit-pose-estimation
     ```
     
-    In case you get a warning from `protobuf` version requirement (>=3.20), update the package to a newer version using pip, 
+    In case you get a warning from `protobuf` version requirement (<=3.20), update the package to a patched version (`3.20` has vulnerabilities)
 
     ```bash
     pip install protobuf==3.20.2
-    ```
+    ``` 
 
 2. Copy the pose estimation node to your workspace 
 
