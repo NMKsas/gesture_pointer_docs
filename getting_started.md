@@ -111,7 +111,7 @@ You should be able to see topic `gesture_projection` that streams the tool in ac
 
 The user can define plane corners with ArUco markers of pre-defined size using RGB stream. The module includes a separate `.roslaunch` file, which uses [`aruco_ros`](https://github.com/pal-robotics/aruco_ros.git) package to fetch and save the four marker positions into a `.csv` file.
 
-![Defining the plane with ArUco markers](assets/images/aruco_method.png)
+![Defining the plane with ArUco markers](../assets/images/aruco_method.png)
 
 The repository provides two [ArUco grids of size 80x60cm](https://github.com/NMKsas/gesture_pointer/tree/7aeae229d7f6e526c57093ee2052c4f51c1a4380/testing_boards), with 8x8cm ArUco markers positioned at the corners. 
  
@@ -196,7 +196,7 @@ Sometimes the ArUcos are not detected correctly, due to RGB stream quality. If t
 ```
 Normally `required="true"` will automatically close each of the single marker detection entities, once the data collection node is ran. `required="false"` will leave the marker nodes up even if the collection fails, and it is possible to inspect the debugging stream via `RViz` or `rqt`. Each marker publishes `/results` stream.
 
-![Debugging ArUco detection RGB stream](assets/images/aruco_debug.png)
+![Debugging ArUco detection RGB stream](../assets/images/aruco_debug.png)
 
 Observe the detections in `/results` stream and adjust the camera settings if needed, using `rqt` plugin.
 
