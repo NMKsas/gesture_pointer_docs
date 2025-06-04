@@ -19,7 +19,7 @@ Go to the top directory of your catkin workspace and install the package depende
 
 ```bash
 # update rosdep database
-rosdep update --include-eol-distros 
+rosdep update --rosdistro noetic  
 
 # install packages
 rosdep install --from-paths src --ignore-src -r -y
@@ -67,7 +67,13 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
 
 3. Download `opendr_bridge` 
 
-    Pose estimation node has some dependencies on another OpenDR project package, `opendr_bridge`. If you want to avoid installing OpenDR environment as a whole, only download [this particular directory](https://github.com/opendr-eu/opendr/tree/master/projects/opendr_ws/src/opendr_bridge). Place the package to your workspace (`<your_workspace>/src/`) alongside `gesture_pointer` and `snap_to_target` folders.  
+    Pose estimation node has some dependencies on another OpenDR project package, `opendr_bridge`. If you want to avoid installing OpenDR environment as a whole, only download [this particular directory](https://github.com/opendr-eu/opendr/tree/master/projects/opendr_ws/src/opendr_bridge). Place the package to your workspace (`<your_workspace>/src/`) alongside `gesture_pointer` and `snap_to_target` folders.
+
+    In addition, download the module `hri_msgs`, which is missing in the `opendr_bridge` package dependencies. 
+      
+    ```bash
+    apt-get install ros-noetic-hri-msgs
+    ```
 
 4. Build the workspace
 
