@@ -12,7 +12,7 @@ The tool is developed for [ROS1 Noetic Ninjemys](https://wiki.ros.org/noetic) di
 Start the use of gesturing tool by cloning the repository,
 
 ```bash
-git clone ...
+git clone https://github.com/NMKsas/gesture_pointer.git
 ```
 
 Go to the top directory of your catkin workspace and install the package dependencies,
