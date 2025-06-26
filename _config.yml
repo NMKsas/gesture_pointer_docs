@@ -2,6 +2,14 @@ title: GesturePointer
 description: Gesturing tool <description>
 theme: just-the-docs
 
+defaults: 
+  -
+    scope: 
+      path: "installation"
+      type: "pages"
+    values: 
+      layout: "page"
+
 url: https://NMKsas.github.io/gesture_pointer_docs
 
 aux_links:
