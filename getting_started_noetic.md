@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Noetic (ROS1)
-parent: Getting started
-permalink: /getting_started/noetic
+title: Getting started
+parent: ROS1 release
+permalink: /ros1_release/getting_started
 nav_order: 1
 ---
 
