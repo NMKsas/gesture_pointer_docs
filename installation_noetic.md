@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Noetic (ROS1)
-parent: Installation
-permalink: /installation/noetic
+title: Installation
+parent: ROS1 release
+permalink: /ros1_release/installation
 nav_order: 1
 ---
 
@@ -28,7 +28,7 @@ rosdep install --from-paths src --ignore-src -r -y
 # Dependencies 
 
 ## Intel RealSense camera and ROS wrapper 
-The current implementation was developed for **Intel RealSense D415**, and supports D400 product family, given `aligned_depth_to_color` stream can be extracted. The current implementation is dependent on `pyrealsense2` package,
+The module was developed for **Intel RealSense D415**, and supports D400 product family, given `aligned_depth_to_color` stream can be extracted. The current implementation is dependent on `pyrealsense2` package,
 
 ```bash
 # install the RealSense python library   
