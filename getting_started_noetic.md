@@ -92,7 +92,7 @@ source devel/setup.bash
 rosrun gesture_pointer gesture_pointer
 ```
 
-Soon after running the node, a depth-image of the camera stream should appear as a pop-up window. Proceeding to click the corners of the desired workspace in the requested clockwise order, starting from lower left corner. Once you are finished, press `Q` to close the pop-up window. After this, the gesture node is set up and running.
+Soon after running the node, a depth-image of the camera stream should appear as a pop-up window. Proceed to click the corners of the desired workspace in the requested clockwise order, starting from lower left corner. Once you are finished, press `Q` to close the pop-up window. After this, the gesture node is set up and running.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NUYPBbpYvpg?si=uNaocCbzMTSnjL8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
