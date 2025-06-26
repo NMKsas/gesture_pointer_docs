@@ -6,13 +6,11 @@ nav_order: 0
 ---
 
 
-This is the documentation for GesturePointer tool. The tool uses RGB-D stream and [OpenPose](https://arxiv.org/abs/1812.08008)-based pose estimation node developed in [OpenDR project](https://github.com/opendr-eu/opendr) to localize and publish pointed targets as ROS topics.
+This is the documentation for GesturePointer ROS module. The gesturing node uses RGB-D stream and pose estimation to localize and publish pointed targets as ROS topics.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6pz6xVdxndg?si=_xCGAT41A2rG3sZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The tool was developed using ROS1 Noetic distribution; ROS2 Humble draft implementation exists but is yet to be released. The original work was developed for Intel RealSense D415 camera.
-
-Author: Noora Sassali, [`@NMKsas`](https://github.com/NMKsas) 
+The tool is released for both ROS1 (Noetic) and ROS2 (Humble) distributions. The modules are targeted for Intel RealSense D400 product family. 
 
 # Overview
 
@@ -36,6 +34,23 @@ The gesturing node outputs three different ROS topics:
 - a projection stream
 - visualization markers. 
 
-The projection stream shows the borders of the user-defined workspace and visual cues for the localized gestures. The stream can be used to direct the gestures better and troubleshoot possible issues with gesturing. The localized point consists of a timestamp and the pointed coordinate with respect to the camera coordinate frame or workplane frame. The visualization markers for `RViz` create spherical points for the localized points on plane. 
+The projection stream shows the borders of the user-defined workspace and visual cues for the localized gestures. The stream can be used to direct the gestures better and troubleshoot possible issues with gesturing. The localized point consists of a timestamp and the pointed coordinate with respect to the camera coordinate frame or workplane frame. The visualization markers for `RViz` create spherical points for the localized points on plane.
+
+# More information / cites
+
+The modules were developed as part of [M.Sc. thesis](https://urn.fi/URN:NBN:fi:tuni-202505195761), in Cognitive Robotics research group at Tampere University. The thesis provides more information about the theory behind the modules. 
+
+```bibtex
+@mastersthesis{sassali,
+    author = {Sassali, Noora},
+    copyright = {This publication is copyrighted. You may download, display and print it for Your own personal use. Commercial use is prohibited.},
+    organization = {Faculty of Information Technology and Communication Sciences, Tampere University},
+    title = {Pointing Gestures in Human-Robot Collaboration},
+    year = {2025},
+    url = {https://urn.fi/URN:NBN:fi:tuni-202505195761}
+}
+```
+# Contact
+Noora Sassali, [`@NMKsas`](https://github.com/NMKsas) 
 
 **Note: The documentation is still a work in progress.**
