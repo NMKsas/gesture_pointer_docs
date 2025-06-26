@@ -3,7 +3,7 @@ layout: page
 title: Installation
 parent: ROS2 release
 permalink: /ros2_release/installation
-nav_order: 2
+nav_order: 1
 ---
 
 # Installation  

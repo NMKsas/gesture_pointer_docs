@@ -3,7 +3,7 @@ layout: page
 title: Getting started
 parent: ROS1 release
 permalink: /ros1_release/getting_started
-nav_order: 1
+nav_order: 2
 ---
 
 # Prerequisites 
