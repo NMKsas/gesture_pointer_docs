@@ -10,7 +10,7 @@ This is the documentation for GesturePointer ROS module. The gesturing node uses
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6pz6xVdxndg?si=_xCGAT41A2rG3sZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The tool is released for both ROS1 (Noetic) and ROS2 (Humble) distributions. The modules are targeted for Intel RealSense D400 product family. 
+The tool is released for both ROS1 (Noetic) and ROS2 (Humble) distributions, and testing has been performed using Ubuntu Focal Fossa 20.04 and Jammy Jellyfish 22.04 distributions. The modules are targeted for Intel RealSense D400 product family.  
 
 # Overview
 

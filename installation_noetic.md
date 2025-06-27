@@ -5,6 +5,8 @@ parent: ROS1 release
 permalink: /ros1_release/installation
 nav_order: 1
 ---
+- TOC 
+{:toc}
 
 # Installation  
 
@@ -13,7 +15,7 @@ The tool is developed for [ROS1 Noetic Ninjemys](https://wiki.ros.org/noetic) di
 Start the use of gesturing tool by cloning the repository,
 
 ```bash
-git clone https://github.com/NMKsas/gesture_pointer.git
+git clone https://github.com/NMKsas/gesture_pointer.git --branch ros1_noetic
 ```
 
 Go to the top directory of your catkin workspace and install the package dependencies,
@@ -25,9 +27,9 @@ rosdep update --rosdistro noetic
 # install packages
 rosdep install --from-paths src --ignore-src -r -y
 ```
-# Dependencies 
 
 ## Intel RealSense camera and ROS wrapper 
+{: .no_toc }
 The module was developed for **Intel RealSense D415**, and supports D400 product family, given `aligned_depth_to_color` stream can be extracted. The current implementation is dependent on `pyrealsense2` package,
 
 ```bash
@@ -39,7 +41,7 @@ Despite the RealSense dependency, you are free to adapt the tool for other camer
 Should you use RealSense camera, install the ROS wrapper as instructed on [Intel RealSense wrapper GitHub page](https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy). 
 
 ## OpenDR Pose estimation
-
+{: .no_toc }
 The original work uses [pose estimation node](https://github.com/opendr-eu/opendr/tree/master/projects/opendr_ws/src/opendr_perception#pose-estimation-ros-node) from OpenDR project. For using the node, follow the [installation instructions](https://github.com/opendr-eu/opend
 r/blob/master/docs/reference/installation.md) provided by the project to install the whole OpenDR environment, **or** install only the relevant files by following these steps: 
 
@@ -97,5 +99,48 @@ r/blob/master/docs/reference/installation.md) provided by the project to install
 And you are all set! 
 
 ## (Aruco ROS library) 
-
+{: .no_toc }
 If you want to use ArUco markers to establish the workplane, the repository provides ArUco node launchers and simple script for collecting pose data using [`aruco_ros`](https://github.com/pal-robotics/aruco_ros.git) package. The package is mentioned in `package.xml` file, and should install when you run `rosdep` on the top directory. However, the installation is not mandatory, should you use the graphical user interface based method (RGB-D) to define the workplane - feel free to comment the dependency out!
+
+
+# Docker Container 
+
+Prerequisite: Install [Docker](https://docs.docker.com/engine/)
+
+Clone the repository,
+```bash
+git clone https://github.com/NMKsas/gesture_pointer.git --branch ros1_noetic
+```
+
+The repository includes `docker-compose.yaml` and `Dockerfile` for using the repository with a docker container. The files are constructed such, that the dependencies are installed automatically. 
+## Volume binds
+{: .no_toc }
+Define the directory binds between the local workspace and the container workspace. By default, Dockerfile will create a `/up/ros1env/` directory and bind the local, cloned repository to the container.
+
+```docker
+# docker_compose.yaml     
+    volumes: 
+      - ./ros1env/src:/up/ros1env/src   # change the local directory if necessary 
+```
+In addition, you may need to change the video directories for the used camera. Check your local system for `/dev/video*` directories and modify the file accordingly. For visualization purposes (`RViz`, `rqt`, `cv2`), you need to give certain rights for screen sharing, before opening docker terminals 
+
+```bash 
+# necessary for using e.g., cv2.imshow(), RViz, ...
+# ...beware the security risks! (Read more: https://linux.die.net/man/1/xhost) 
+xhost +local:<username>
+
+# after use, remove the access rights 
+xhost -local:<username> 
+```
+
+Launch the container at root directory of the repository 
+```bash 
+sudo docker compose up 
+```
+
+Launch interactive terminals for the container: 
+```bash
+sudo docker exec -it gp_container /bin/bash 
+```
+
+And you are all set...!
