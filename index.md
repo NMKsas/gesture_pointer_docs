@@ -43,8 +43,8 @@ The modules were developed as part of [M.Sc. thesis](https://urn.fi/URN:NBN:fi:t
 [Pre-print of Ro-Man 2025 conference paper](https://doi.org/10.48550/arXiv.2506.22116):
 
 ```bibtex
-@article{sassali,
-    author = {Noora Sassali and Roel Pieters},
+@article{sassali-and-pieters-2025,
+    author = {Sassali, N. and Pieters, R.},
     title = {Evaluating Pointing Gestures in Human-Robot Collaboration},
     year = {2025},
     note = {Accepted by the 2025 34th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN). Preprint.}
@@ -53,7 +53,7 @@ The modules were developed as part of [M.Sc. thesis](https://urn.fi/URN:NBN:fi:t
 ```
 
 ```bibtex
-@mastersthesis{sassali,
+@mastersthesis{sassali_msc,
     author = {Sassali, Noora},
     copyright = {This publication is copyrighted. You may download, display and print it for Your own personal use. Commercial use is prohibited.},
     organization = {Faculty of Information Technology and Communication Sciences, Tampere University},
