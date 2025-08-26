@@ -56,7 +56,7 @@ The modules were developed as part of [M.Sc. thesis](https://urn.fi/URN:NBN:fi:t
     author = {Sassali, N. and Pieters, R.},
     title = {Evaluating Pointing Gestures in Human-Robot Collaboration},
     year = {2025},
-    note = {Accepted by the 2025 34th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN). Preprint.}
+    note = {Accepted by the 2025 34th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN). Preprint.},
     url = {https://doi.org/10.48550/arXiv.2506.22116}
 }
 ```
