@@ -47,8 +47,6 @@ The projection stream shows the borders of the user-defined workspace and visual
 
 # More information / cites
 
-The modules were developed as part of [M.Sc. thesis](https://urn.fi/URN:NBN:fi:tuni-202505195761), in Cognitive Robotics research group at Tampere University. The thesis provides more information about the theory behind the modules. 
-
 [Pre-print of Ro-Man 2025 conference paper](https://doi.org/10.48550/arXiv.2506.22116):
 
 ```bibtex
@@ -60,6 +58,8 @@ The modules were developed as part of [M.Sc. thesis](https://urn.fi/URN:NBN:fi:t
     url = {https://doi.org/10.48550/arXiv.2506.22116}
 }
 ```
+
+The modules were developed as part of [M.Sc. thesis](https://urn.fi/URN:NBN:fi:tuni-202505195761), in Cognitive Robotics research group at Tampere University. The thesis provides more information about the theory behind the modules. 
 
 ```bibtex
 @mastersthesis{sassali_msc,
